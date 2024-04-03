@@ -448,6 +448,9 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Wno-format-security \
 		   -Werror \
 		   -Xassembler -march=armv8-a+lse \
+		   -Wno-address-of-packed-member \
+		   -Wno-frame-address \
+		   -Wno-fortify-source \
 		   -std=gnu89
 KBUILD_CPPFLAGS := -D__KERNEL__
 KBUILD_AFLAGS_KERNEL :=
